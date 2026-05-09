@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HOLA MUNDO</h1>
+    <h2>aaaa</h2>
+    <label></label>
+</body>
+</html><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suave Dulce - Pastelería Artesanal</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #6B5E4A;
+            background: linear-gradient(135deg, #FDF6E3 0%, #F5E9D4 50%, #F8F1E4 100%);
+            min-height: 100vh;
+        }
+
+        /* Header Simple y Elegante */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(253, 246, 227, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 100;
+            padding: 1rem 0;
+            border-bottom: 1px solid rgba(245, 233, 212, 0.5);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 5%;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: #D4A574;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: #8B7355;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            background: rgba(244, 212, 166, 0.3);
+            color: #D4A574;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 5%;
+            position: relative;
+        }
+
+        .hero-content h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4.5rem;
+            color: #D4A574;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .hero-content p {
+            font-size: 1.3rem;
+            max-width: 600px;
+            margin: 0 auto 2.5rem;
+            color: #8B7355;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: linear-gradient(135deg, #FFE4B5 0%, #FFDAB9 100%);
+            color: #D4A574;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 30px;
+            box-shadow: 0 8px 25px rgba(255, 228, 181, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(255, 228, 181, 0.6);
+        }
+
+        /* Postres Section */
+        .postres {
+            padding: 100px 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-title h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            color: #D4A574;
+            margin-bottom: 1rem;
+        }
+
+        .section-title p {
+            font-size: 1.1rem;
+            color: #8B7355;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .postres-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .postre-card {
+            background: rgba(255, 255, 255, 0.85);
+            border-radius: 20px;
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(245, 233, 212, 0.5);
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(244, 212, 166, 0.2);
+        }
+
+        .postre-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(244, 212, 166, 0.3);
+        }
+
+        /* Iconos grandes y simples representando postres */
+        .postre-icon {
+            font-size: 5rem;
+            margin-bottom: 1.5rem;
+            display: block;
+            filter: drop-shadow(0 4px 8px rgba(212, 164, 116, 0.2));
+        }
+
+        /* Colores específicos por postre */
+        .cheesecake { border-top: 4px solid #FFE4E1; }
+        .cheesecake .postre-icon { color: #FFB6C1; }
+        
+        .chocolate { border-top: 4px solid #D7BDE2; }
+        .chocolate .postre-icon { color: #A569BD; }
+        
+        .fresa { border-top: 4px solid #FADBD8; }
+        .fresa .postre-icon { color: #E91E63; }
+        
+        .limon { border-top: 4px solid #FFF9C4; }
+        .limon .postre-icon { color: #FDD835; }
+        
+        .vainilla { border-top: 4px solid #FFF3E0; }
+        .vainilla .postre-icon { color: #FFCA28; }
+
+        .postre-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: #D4A574;
+            margin-bottom: 1rem;
+        }
+
+        .postre-card p {
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+        }
+
+        .precio {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #D4A574;
+        }
+
+        /* Decoración sutil */
+        .decor-dots {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        .dot {
+            position: absolute;
+            background: rgba(244, 212, 166, 0.3);
+            border-radius: 50%;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .dot:nth-child(1) { width: 20px; height: 20px; top: 10%; left: 10%; animation-delay: 0s; }
+        .dot:nth-child(2) { width: 12px; height: 12px; top: 70%; right: 15%; animation-delay: -2s; }
+        .dot:nth-child(3) { width: 16px; height: 16px; bottom: 20%; left: 80%; animation-delay: -4s; }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        /* Footer */
+        footer {
+            background: rgba(253, 246, 227, 0.9);
+            text-align: center;
+            padding: 2rem 5%;
+            border-top: 1px solid rgba(245, 233, 212, 0.5);
+            margin-top: 5rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-content h1 { font-size: 3rem; }
+            .section-title h2 { font-size: 2.2rem; }
+            .postres-grid { grid-template-columns: 1fr; }
+            .nav-links { gap: 1rem; }
+            .postre-icon { font-size: 4rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="#" class="logo">Suave Dulce</a>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#postres">Postres</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1>Pastelería Artesanal</h1>
+            <p>Delicados postres hechos con ingredientes naturales y mucho cariño. Cada pieza es una pequeña obra de arte.</p>
+            <a href="#postres" class="cta-button">Ver Postres</a>
+        </div>
+    </section>
+
+    <!-- Postres -->
+    <section class="postres" id="postres">
+        <div class="section-title">
+            <h2>Nuestra Selección</h2>
+            <p>Postres clásicos con un toque moderno, siempre frescos del día</p>
+        </div>
+        
+        <div class="postres-grid">
+            <!-- Cheesecake -->
+            <div class="postre-card cheesecake">
+                <div class="decor-dots">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <span class="postre-icon">🍰</span>
+                <h3>Cheesecake Clásico</h3>
+                <p>Cremoso relleno de queso sobre base de galleta, con toque de frutos rojos.</p>
+                <div class="precio">$25</div>
+            </div>
+
+            <!-- Chocolate -->
+            <div class="postre-card chocolate">
+                <div class="decor-dots">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <span class="postre-icon">🍫</span>
+                <h3>Torta de Chocolate</h3>
+                <p>Chocolate belga intenso con ganache cremosa y toque de sal marina.</p>
+                <div class="precio">$28</div>
+            </div>
+
+            <!-- Fresas -->
+            <div class="postre-card fresa">
+                <div class="decor-dots">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <span class="postre-icon">🍓</span>
+                <h3>Tarta de Fresas</h3>
+                <p>Fresas frescas sobre crema ligera y masa hojaldrada crujiente.</p>
+                <div class="precio">$24</div>
+            </div>
+
+            <!-- Limón -->
+            <div class="postre-card limon">
+                <div class="decor-dots">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <span class="postre-icon">🍋</span>
+                <h3>Tarta de Limón</h3>
+                <p>Curd de limón fresco con merengue italiano perfectamente tostado.</p>
+                <div class="precio">$26</div>
+            </div>
+
+            <!-- Vainilla -->
+            <div class="postre-card vainilla">
+                <div class="decor-dots">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <span class="postre-icon">🧁</span>
+                <h3>Magdalenas Vainilla</h3>
+                <p>Vainilla de Madagascar con buttercream suave y decoraciones comestibles.</p>
+                <div class="precio">$22</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Suave Dulce Pastelería | Hecho con amor y azúcar glass</p>
+    </footer>
+
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+    </script>
+</body>
+</html>
