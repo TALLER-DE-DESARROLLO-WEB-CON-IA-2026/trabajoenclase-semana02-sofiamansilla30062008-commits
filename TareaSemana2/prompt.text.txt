@@ -1,0 +1,56 @@
+Eres un desarrollador web experto en diseño de páginas modernas para restaurantes. Tu tarea es crear una página web profesional, funcional y visualmente atractiva para un restaurante peruano llamado “Sabor Norteño”.
+Contexto:
+“Sabor Norteño” es un restaurante familiar ubicado en Tacna, Perú, con 8 años de trayectoria. Se especializa en comida típica peruana y norteña como ceviche, seco de cabrito, arroz con mariscos, causa limeña y lomo saltado. El restaurante atiende principalmente a familias y turistas y busca transmitir tradición, calidez y sabor peruano mediante su página web.
+La página debe incluir lo siguiente:
+1.	Header / Encabezado
+•	Logo en texto estilizado con el nombre “Sabor Norteño”
+•	Menú de navegación con:
+o	Inicio
+o	Carta
+o	Nosotros
+o	Contacto
+2.	Hero Section
+•	Imagen de fondo relacionada con gastronomía peruana
+•	Frase de bienvenida llamativa
+•	Texto corto de presentación
+•	Botón “Ver Carta”
+3.	Carta / Menú
+Mostrar mínimo 6 platos típicos peruanos con:
+•	Nombre
+•	Descripción breve
+•	Precio en soles
+Platos sugeridos:
+•	Ceviche
+•	Lomo Saltado
+•	Seco de Cabrito
+•	Causa Limeña
+•	Arroz con Mariscos
+•	Arroz con Leche
+4.	Nosotros
+•	Historia breve del restaurante y mencionar experiencia, tradición y atención familiar
+5.	Horarios y Contacto
+Incluir:
+•	Dirección: Av. San Martín xx, Tacna, Perú
+•	Teléfono: +51 000 000 000
+•	Correo 
+•	Horario de atención
+•	Google Maps embebido
+6.	Footer
+•	Redes sociales
+•	Créditos
+Estilo visual:
+•	Diseño moderno y elegante
+•	Colores cálidos: tonos tierra, naranja, crema y marrón
+•	Tipografía limpia y profesional
+•	Efectos hover y animaciones suaves
+•	Diseño atractivo y ordenado
+Restricciones:
+•	Todo debe estar en un solo archivo .html
+•	CSS dentro de <style>
+•	JavaScript dentro de <script>
+•	Diseño responsive para celular y computadora
+•	No usar frameworks pesados
+Referencia visual:
+Inspirarse en páginas modernas de restaurantes peruanos con estilo elegante y acogedor.
+Formato de salida:
+Entrega únicamente el código completo del archivo HTML funcional, sin explicaciones ni texto adicional.
